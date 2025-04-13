@@ -1,0 +1,106 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Happy Birthday Progga!</title>
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Quicksand:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Quicksand', sans-serif;
+      background: linear-gradient(135deg, #fdf6f0, #e8eaf6, #fce1e4);
+      overflow: hidden;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+
+    h1 {
+      font-family: 'Great Vibes', cursive;
+      font-size: 3.2em;
+      color: #82667f;
+      margin: 0;
+      animation: bounce 1.8s infinite;
+    }
+
+    p {
+      font-size: 1.2em;
+      color: #6b5b95;
+      margin: 15px 20px 0;
+      max-width: 90%;
+      font-weight: 500;
+    }
+
+    button {
+      margin-top: 25px;
+      padding: 12px 24px;
+      font-size: 1em;
+      background-color: #cdb4db;
+      color: #fff;
+      border: none;
+      border-radius: 12px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      cursor: pointer;
+      transition: 0.3s ease;
+    }
+
+    button:hover {
+      background-color: #b5838d;
+    }
+
+    .balloon {
+      position: absolute;
+      bottom: -150px;
+      width: 35px;
+      height: 55px;
+      background-color: #f7d9e3;
+      border-radius: 50% 50% 45% 45%;
+      animation: floatUp 10s linear infinite;
+      opacity: 0.7;
+    }
+
+    .balloon::after {
+      content: '';
+      position: absolute;
+      bottom: -20px;
+      left: 50%;
+      width: 2px;
+      height: 20px;
+      background: #ccc;
+      transform: translateX(-50%);
+    }
+
+    @keyframes floatUp {
+      0% { transform: translateY(0); opacity: 0.8; }
+      100% { transform: translateY(-120vh); opacity: 0; }
+    }
+
+    @keyframes bounce {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-10px); }
+    }
+  </style>
+</head>
+<body>
+  <h1>Happy Birthday, Progga!</h1>
+  <p>Wishing you a beautiful year filled with love, light, and all your heart’s sweetest dreams.</p>
+  <button onclick="showWish()">Tap for a Little Sparkle</button>
+
+  <!-- Aesthetic Balloons -->
+  <div class="balloon" style="left: 12%; animation-delay: 0s;"></div>
+  <div class="balloon" style="left: 28%; animation-delay: 3s; background-color: #dee2ff;"></div>
+  <div class="balloon" style="left: 47%; animation-delay: 1.5s; background-color: #ffc8dd;"></div>
+  <div class="balloon" style="left: 65%; animation-delay: 2s; background-color: #d0f4de;"></div>
+  <div class="balloon" style="left: 85%; animation-delay: 4s; background-color: #fefae0;"></div>
+
+  <script>
+    function showWish() {
+      alert('Sending sparkles and hugs your way, Progga!');
+    }
+  </script>
+</body>
+</html>
